@@ -9,7 +9,7 @@ const indexTemplate = `import { createRouterLayout } from 'vue-router-layout'
 import generatedRoutes from './generated-routes'
 
 const RouterLayout = createRouterLayout(layout => {
-  return import('<%= layoutsDir %>/' + layout + '.vue')
+  return import('/src/layouts/' + layout + '.vue')
 })
 
 export default [
