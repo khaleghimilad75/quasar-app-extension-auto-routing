@@ -5,14 +5,14 @@ Quasar App Extension auto-routing
 
 # Install
 ```bash
-quasar ext add auto-routing
+quasar ext add auto-routing-windows
 ```
 Quasar CLI will retrieve it from the NPM registry and install the extension to your project.
 
 Lastly, dive into `src/router/routes.js` and use the generated routes:
 
 ```js
-import generatedRoutes from './auto-routing' // 🤿 Here
+import generatedRoutes from './auto-routing-windows' // 🤿 Here
 
 const routes = [
   ...generatedRoutes, // 🤿 And here
@@ -56,7 +56,7 @@ When adding a `routePrefix` in `quasar.extensions.json`, be sure to also set `"n
     "routePrefix": "/admin", // 🤿 Set a prefix for routes
     "layoutsDir": "src/layouts",
     "ignorePattern": "/(^|[/\\])../",
-    "outDir": "src/router/auto-routing",
+    "outDir": "src/router/auto-routing-windows",
     "pagesImportPrefix": "pages/",
     "generatorConfig": {
       "nested": true // 🤿 Tell the generator to treat ALL routes as nested.
